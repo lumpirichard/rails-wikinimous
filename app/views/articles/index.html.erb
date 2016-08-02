@@ -1,12 +1,14 @@
-<h1>Wiki</h1>
+<div class="container">
 
-<p><%= link_to 'New Article', new_article_path %></p>
+  <h1 class="text-center">Wiki</h1>
 
-<% @articles.each do |article| %>
-  <div>
-    <h3><%= article.title %></h3>
-    <p><%= article.description %></p>
-    <p><%= link_to 'Show Detail', article_path(article) %></p>
-  </div>
-<% end %>
+
+  <% @articles.each do |article| %>
+    <div>
+      <h3 class="text-center"><%= article.title %></h3>
+      <p class="text-center"><%= article.description %></p>
+      <p class="text-center"><%= link_to 'Show Detail', article_path(article) %></p>
+    </div>
+  <% end %>
+</div>
 
