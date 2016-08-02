@@ -1,0 +1,11 @@
+<h1><%= @article.title %></h1>
+
+<h4><%= @article.description  %></h4>
+
+<p><%= @article.content %></p>
+
+<p><%= link_to "Edit", edit_article_path(@article)  %></p>
+
+<p><%= link_to 'DELETE', article_path(@article), method: :delete %></p>
+
+<p><%= link_to 'All Articles', articles_path%></p>
